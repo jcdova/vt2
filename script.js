@@ -283,7 +283,10 @@ function clearExcerciseBtn() {
   output2.innerText = `${''}`;
   thirtySecText.innerText = `${''}`;
   stopTimer();
-  count = 0;
+  count = -1;
+  countRounds();
+  round.innerText = `${''}`;
+  location.reload();
 }
 
 startBtn.addEventListener('click', startTimer);
