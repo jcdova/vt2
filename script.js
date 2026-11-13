@@ -54,14 +54,14 @@ const array1 = [
   '10 Regular Squats',
   '20 Pushups',
   '4 Burpees with Pushup',
-  '10 Candlesticks',
+  '15 Candlesticks',
   '10 Low to High Plank',
   '10 Ski Jumps',
   '30 Second Low Plank Hold',
   '10 Alt Low Plank with Punches',
   '10 Alt High Plank with Punches',
-  '10 Heismans',
-  '10 Hooks',
+  '15 Heismans',
+  '20 Hooks',
   '15 Half Burpees',
   '10 Drop Squats',
   '10 Curls',
@@ -140,7 +140,7 @@ const array2 = [
   'Squats',
   '20 High Plank Jacks',
   'Jumping Jacks',
-  'Wall Sits with Straight Punches',
+  'Straight Punches with Dumbells',
   'High Plank Shoulder Taps',
   'Table Top Shoulder Taps',
   'Russian Twists',
@@ -158,7 +158,7 @@ const array2 = [
   'Knee to elbows',
   'Alt Round House kicks',
   'Back Kicks',
-  'Back Kicks with Punch',
+  'Back Kicks with Punches',
   'Drop Squats',
   'Squat Jumps',
   'Scissor Kicks',
@@ -178,6 +178,7 @@ const array2 = [
   'Kettle Bell Upright Row',
   'Kettle Bell Lunge Pass Through',
   'Kettle Bell High Plank Pull Through',
+  'Downward dog alt toe touches',
 ];
 
 function getRandomItemFromArray(arr) {
@@ -264,6 +265,7 @@ function updateDisplay(seconds) {
 function startTimer() {
   const intervalSeconds = parseInt(210, 10);
   clearExcercise();
+  startRound();
   if (isNaN(intervalSeconds) || intervalSeconds <= 0) {
     return;
   }
