@@ -265,7 +265,6 @@ function updateDisplay(seconds) {
 function startTimer() {
   const intervalSeconds = parseInt(210, 10);
   clearExcercise();
-  startRound();
   if (isNaN(intervalSeconds) || intervalSeconds <= 0) {
     return;
   }
